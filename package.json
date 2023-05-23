@@ -1,0 +1,58 @@
+{
+  "name": "trakishi-client",
+  "version": "0.1.27",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/varela-round": "^5.0.1",
+    "@mui/material": "^5.13.2",
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-csv": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "react-multi-select-component": "^4.3.4",
+    "react-router-dom": "^6.11.2",
+    "react-scripts": "^5.0.1",
+    "react-step-progress-bar": "^1.0.3",
+    "react-table": "^7.8.0",
+    "recharts": "^2.6.2",
+    "web-vitals": "^3.3.1"
+  },
+  "scripts": {
+    "predev": "npm install",
+    "update": "npx npm-check-updates -u",
+    "start": "react-scripts start",
+    "dev": "PORT=5999 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prebuild": "npm run version:patch",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4"
+  }
+}
